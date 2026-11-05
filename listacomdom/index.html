@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMercado Plus</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/logo-supermercado-plus.png"
+                alt="SuperMercado Plus"
+                class="logo">
+        </div>
+    </header>
+
+    <main>
+
+        <section class="cadastro">
+
+            <div class="campo">
+                <label>Produto:</label>
+                <input type="text" id="titulo">
+            </div>
+
+            <div class="campo">
+                <label>Fornecedor:</label>
+                <input type="text" id="descricao">
+            </div>
+
+            <div class="campo">
+                <label>Imagem (URL):</label>
+                <input type="text" id="imagem">
+            </div>
+
+            <button onclick="adicionarItem()">
+                Adicionar
+            </button>
+
+        </section>
+
+        <section class="conteudo">
+
+            <div class="lista-container">
+
+                <h3>Produtos em Estoque</h3>
+
+                <ul id="listaProdutos"></ul>
+
+            </div><br>
+
+            <div id="detalhes" class="detalhes">
+
+                <h3>Selecione um produto</h3>
+
+                <p></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Site desenvolvido por Arthur Dias e Kevin Nozaki 2°D
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
